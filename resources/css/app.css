@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+  .white{
+    background: #f3f4f6;
+  }
+  .black{
+    background: #2c3541;
+  }
+  ::-webkit-scrollbar{
+    width: 5px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #cdcdcd;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #cdcdcd;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: #cdcdcd;
+  }
+  .moon{
+    position: fixed;
+    margin-top: 190px;
+    font-size: 33px;
+    padding: 13px;
+    background-color: white;
+    color: #404b5c;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #404b5c;
+  }
+  .moon:hover,.night_moon:hover{
+    transform: scale(1.06);
+  }
+  .night_moon{
+    position: fixed;
+    margin-top: 190px;
+    font-size: 33px;
+    padding: 13px;
+    background-color: #404b5c;
+    color: white;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid white;
+  }

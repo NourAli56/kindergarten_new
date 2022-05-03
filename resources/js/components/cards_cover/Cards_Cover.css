@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.card{
+    background-color: white;
+    margin-top: -50px;
+    width: 300px;
+    padding: 15px;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 7px rgb(207, 207, 207); 
+    transition: all 0.2s ease-in-out;
+}
+.card:hover{
+    margin-top: -60px;
+    box-shadow: 0px 10px 20px rgb(179, 179, 179); 
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.inner i{
+    margin-right: 28px;
+    font-size: 25px;
+    padding: 15px 17px;
+    color: white;
+    border-radius: 50%;
+}
+.blue{
+    background-color: rgb(48, 78, 143);
+}
+.green{
+    background-color: teal;
+}
+.purpel{
+    background-color: #8e1ea7;
+}
+.inner_para{
+    width: 200px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: rgb(71, 71, 71);
+    margin-top: 15px;
+}
+.cards_link{
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+/*-----------------------------------------------------------*/
+.night_card{
+    background-color: #404b5c;
+    margin-top: -50px;
+    width: 300px;
+    padding: 15px;
+    margin-right: 40px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.night_card:hover{
+    margin-top: -60px;
+}
+.night_inner_para{
+    width: 200px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: rgb(218, 218, 218);
+    margin-top: 15px;
+}
+@media screen and (max-width: 1148px) {
+    .cards{
+        margin-left: 12px;
+    }
+    .card,.night_card{
+        width: 270px;
+        margin-right: 25px;
+        margin-bottom: 80px;
+    }
+    .card:last-child,.night_card:last-child{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .card,.night_card{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 747px) {
+    .card,.night_card{
+        width: 350px;
+    }
+}

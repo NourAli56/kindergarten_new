@@ -1,0 +1,45 @@
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: linear-gradient(rgba(53, 37, 37, 0.3), rgba(0, 0, 0, 0.3)), url(./kids\ final.jpg) center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+.cover img{
+    width: 100%;
+    height: 100%;
+    
+}
+.cover h2{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 28px;
+}
+.cover h1{
+    color: white;
+    margin-top: -2px;
+    font-size: 33px;
+    letter-spacing: 1px;
+    z-index: 50;
+}
+.cover button{
+    border: none;
+    padding:10px 14px;
+    border-radius: 5px;
+    background-color: #be2edd;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in-out;
+}
+.cover button:hover{
+    background-color: white;
+    color: #be2edd;
+    border: 2px solid #be2edd;
+}

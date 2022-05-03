@@ -1,0 +1,161 @@
+/********** header **************/
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:white;
+    padding:10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 55px;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.logo img{
+    width: 130px;
+    height: 60px;
+}
+
+.navbar a{
+    font-size: 17px;
+    padding:0 1.5rem;
+    transition: all 0.4s ease-in-out;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #be2edd;
+    font-size: 19px;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 22.4px;
+    color: #be2edd;
+    margin-left: 1.5rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.icons i{
+    text-decoration: none;
+    font-size: 22.4px;
+    color: #be2edd;
+    margin-left: 1.5rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
+}
+.icons i:hover{
+    transform: scale(1.1);
+}
+
+#toggler{
+    display: none;
+}
+
+.menu{
+    font-size: 20px;
+    color:rgb(170, 170, 170);
+    border-radius: .5rem;
+    padding:5px 10px;
+    cursor: pointer;
+    border:2px solid rgb(170, 170, 170);
+    display: none;
+}
+/*-----------------------------------------------------------*/
+.night_header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#2c3541;
+    padding:10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0px 3px 5px #3c4a5a;
+    height: 55px;
+}
+.night_menu{
+    font-size: 20px;
+    color:rgb(218, 218, 218);
+    border-radius: .5rem;
+    padding:5px 10px;
+    cursor: pointer;
+    border:2px solid rgb(218, 218, 218);
+    display: none;
+}
+.night_navbar a{
+    font-size: 17px;
+    padding:0 1.5rem;
+    transition: all 0.4s ease-in-out;
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+}
+.night_navbar a:hover{
+    color: #be2edd;
+    font-size: 19px;
+}
+/********** end header **************/
+@media (max-width:1042px){
+    .navbar a{
+        padding:0 1rem;
+    }
+}
+@media (max-width:840px){
+    .header{
+        padding: 10px 50px;
+    }
+    .night_header{
+        padding: 10px 50px;
+    }
+    .menu,.night_menu{
+        display: block;
+    }
+
+    .navbar{
+        height: 270px;
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:white;
+        display: flex;
+        flex-direction: column;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .night_navbar{
+        height: 270px;
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#2c3541;
+        display: flex;
+        flex-direction: column;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    #toggler:checked ~ .night_navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .navbar a,.night_navbar a{
+        width: 100%;
+        margin:5px 0px;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgb(170, 170, 170);
+        text-align: center;
+        color: rgb(170, 170, 170);
+    }
+    .navbar a:last-child,.night_navbar a:last-child{
+        border-bottom: none;
+    }
+}
